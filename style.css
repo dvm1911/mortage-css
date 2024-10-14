@@ -1,0 +1,466 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+    display: flex;
+    margin: 16px;
+}
+
+.left{
+    width: 50vw;
+    height: 96vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.headNameAnimation{
+    animation: HeadNameAnimation 6s;
+}
+
+@keyframes HeadNameAnimation {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    100%{
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+
+.webTitle{
+    display: flex;
+    align-items: center;
+}
+
+.webTitleImg{
+    width: 70px;
+    transition: all ease-in;
+    z-index: 10;
+}
+
+.webTitleImg>img{
+    width: 100%;
+}
+
+.webTitleImgAnimation1{
+    animation: webTitleIcon1 2s;
+}
+
+@keyframes webTitleIcon1{
+    0%{
+    }
+
+    100%{
+        transform: translate(50vw, 50vh) rotate(360deg);
+        opacity: 0;
+    }
+
+
+}
+
+.webTitleImgAnimation2{
+    animation: webTitleIcon2 3s;
+}
+
+@keyframes webTitleIcon2{
+    0%{    
+        transform: translate(40vw, 40vh) rotate(360deg);
+        border: 50px solid white;
+        border-radius: 50%;
+        opacity: 0;
+
+    }
+
+    50%{    
+        transform: translate(40vw, 40vh) rotate(360deg);
+        border: 50px solid white;
+        opacity: 100;
+        border-radius: 50%;
+    }
+    
+    100%{
+
+    }
+}
+
+.enroll{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.enrollBtn{
+    cursor: pointer;
+}
+
+.enrollBtnAnime{
+    animation: enrollBtnAnim 6s;
+}
+
+@keyframes enrollBtnAnim{
+    0%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+.allRemaingClassAnim{
+    animation: appear 7s;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    80%{
+        opacity: 0;
+        transform: translateY(50px);
+
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.enrollAnimeSpan{
+    animation: enrollAnimation 7s;
+}
+
+@keyframes enrollAnimation {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+
+    100%{
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+
+.enrollSpan{
+    color: grey;
+    font-weight: 350; 
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.enroll>button{
+    padding: 5px 10px 5px 10px;
+    color: green;
+    font-weight: 550; 
+    font-size: 0.9em; 
+    line-height: 1.75rem;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 78px;
+}
+
+.pointerBox{
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; 
+}
+
+
+.pointer{
+    position: relative;
+    left: 190px;
+    height: 12px;
+    width: 20px;
+}
+
+.pointerOpacity{
+    opacity: 0;
+    top: 96px;
+}
+
+.pointer>img{
+    width: 100%;
+    height: 100%;
+}
+
+.dialogueBox{
+    background-color: #2A0707;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    gap: 6px;
+    margin: 8px;
+    color: white;
+    font-size: small;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+main>h1{
+    margin-top: 100px;
+    font-size: 2.8em;
+    font-weight: 650;
+    letter-spacing: -0.0125em;
+}
+
+main>p{
+    color: grey;
+    font-weight: 350; 
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 48px;
+}
+
+.input{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input>label{
+    padding: 4px;
+    font-weight: 550; 
+    font-size: 0.75rem; 
+    width: 24rem;
+}
+
+.input>input{
+    border: 0px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.rememberCheck{
+    margin: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.rememberCheck>input{
+    width: 1.5em;
+    border-radius: 8px;
+}
+
+.rememberCheck>label{
+    color: grey;
+    font-weight: 350; 
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+}
+
+.logIn{
+    display: flex;
+    padding: 12px;
+    border: 0px;
+    border-radius: 24px;
+    background-color: green;
+    color: white;
+    font-size: 1rem; 
+    line-height: 1.5rem;
+    width: 24rem;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.logIntxt{
+    position: relative;
+    transition: all 0.4s;
+    
+}
+
+.logIntxtBefore{
+    left: 10rem;
+}
+
+.logIntxtAfter{
+    opacity: 0;
+    left: 20rem;
+}
+
+.loader{
+    position: relative;
+    left: 0rem;
+    transition: all 0.4s;
+    border: 4px solid #CECECE;
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: loading 2s linear infinite;
+}
+
+.loaderBefore {
+    opacity: 0;
+  }
+
+  @keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loaderAfter{
+    left: 12rem;
+    opacity: 100;
+}
+
+.forgotIdPass{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.forgotIdPass>p{
+    color: green;
+    font-weight: 500; 
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 10px;
+}
+
+.aside{
+    width: 50vw;
+    overflow: hidden;
+    height: 96vh;
+    border-radius: 18px;
+    transition: ease-in;
+}
+
+.aside>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.asideAnimation1{
+    animation: aside1 2s;
+}
+
+@keyframes aside1 {
+    100%{
+        transform: scale(0);
+    }
+    
+}
+
+.asideAnimation2{
+    animation: aside2 4s;
+}
+
+@keyframes aside2{
+    0%{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        width: 0;
+        height: 0;
+        border-radius: 18px;
+    }
+
+    50%{
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        width: 100vw;
+        height: 96vh;
+        border-radius: 18px;
+        
+    }
+
+    60%{
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        width: 100vw;
+        height: 96vh;
+        border-radius: 18px;
+
+    }
+
+    100%{
+        position: static;
+        top: 2vh;
+        left: 50vw;
+        width: 48vw;
+        height: 96vh;
+        border-radius: 18px;
+
+    }
+}
+
+input:focus {
+    border: 0px;
+    outline: none;
+}
+
+.input-normal{
+    border: 1px solid grey;
+}
+
+.input-focus{
+    border: 2px solid green;
+}
+
+
